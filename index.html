@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="weatherApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <link type="text/css" rel="stylesheet" href="bootstrap.min.css">
+    
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript" src="angular-route.min.js"></script>
+    <script type="text/javascript" src="angular-resource.min.js"></script>
+    
+    <script type="text/javascript" src="app.js"></script>
+    
+    <style>
+        * {
+            font-size: 1.05em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="/" class="navbar-brand">Du bao thoi tiet</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#/">Home</a></li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div ng-view></div>
+    </div>
+</body>
+</html>
