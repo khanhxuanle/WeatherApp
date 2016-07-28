@@ -1,1 +1,14 @@
-Forecast
+<div class="row">
+    <div class="col-md-6 alert alert-success" role="alert"> Thành phố: {{ city }}</div>
+</div>
+</div>
+Days: <a href="#/forecast/2" ng-class="{ 'bg-primary': day === '2' }">2</a> | <a href="#/forecast/5" ng-class="{ 'bg-primary': day === '5' }">5</a> | <a href="#/forecast/7" ng-class="{ 'bg-primary': day === '7' }">7</a>
+<hr>
+<div ng-repeat="w in weatherResult.list">
+    <div class="row">
+        <div class="col-md-12">
+            <weather-report weather-day="w" covert-to-date="covertToDate(dt)" date-format="MMMM d, y"></weather-report>
+        </div>
+    </div>
+
+</div>
